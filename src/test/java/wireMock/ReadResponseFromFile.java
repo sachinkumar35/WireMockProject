@@ -38,12 +38,12 @@ public class ReadResponseFromFile {
 
     @Test
     public void testCode(){
-        String testApi = "http://localhost:" + PORT + "/emps/1"; // creating testAPI URL
+        String testApi = "http://localhost:"+PORT + END_POINT; // creating testAPI URL
         System.out.println("Service to be hit: "+ testApi);
 
         Response response = RestAssured.
                 given().
-                get("http://localhost:8080/emps/1").
+                get("testApi").
                 then().statusCode(201).log().all().
                 extract().response();
 
