@@ -3,11 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="wireMock.TestCases">
+      <class name="wireMock.ReadResponseFromFile">
         <methods>
-          <include name="testTwo"/>
+          <include name="initializeServer"/>
+          <include name="testCode"/>
+          <include name="closeServer"/>
         </methods>
-      </class> <!-- wireMock.TestCases -->
+      </class> <!-- wireMock.ReadResponseFromFile -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
